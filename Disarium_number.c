@@ -1,19 +1,36 @@
-#include<stdio.h> 
-#include<math.h> 
-int main() 
-{ 
-    int n,sum=0,r,d,m;
-    scanf("%d",&n); 
-    m=n; 
-    d=(int)log10(n)+1; 
-    while(n>0)
-    { r=n%10; 
-    sum=sum+ceil(pow(r,d));
-    n=n/10;
-    d--;
-    } 
-    if(sum==m) 
-    printf("True");
-    else printf("False"); 
-    return 0;
+#include<stdio.h>
+int main()
+{
+    int n,r,sum=0,a,c=1,p=1,i;
+    scanf("%d",&n);
+    a=n;
+    while(a!=0)
+    {
+        r=a%10;
+        sum=(sum*10)+r;
+        a=a/10;
+    }
+    a=sum;
+    sum=0;
+    while(a!=0)
+    {
+        r=a%10;
+        for(i=1;i<=c;i++)
+        {
+            p=p*r;
+        }
+        sum=sum+p;
+        a=a/10;
+        c++;
+        p=1;
+    }
+    if(sum==n)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+    
 }
