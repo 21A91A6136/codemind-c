@@ -2,16 +2,15 @@
 #include<string.h>
 int main()
 {
-    char s[100];
-    int n,len,i;
+    char a[100];
+    int i,wc=0;
     scanf("%[^
-]s",&s);
-    for(i=0;i<strlen(s);i++)
+]s",a);
+    for(i=0;a[i]!=NULL;i++)
     {
-        if(s[i]==' ')
-    {
-        n++;
+        if(a[i]==32)
+        wc++;
     }
-    }
-        printf("%d",n+1);
+    
+    printf("%d",wc+1);
 }
