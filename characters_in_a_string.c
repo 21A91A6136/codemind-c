@@ -2,10 +2,10 @@
 #include<string.h>
 int main()
 {
-    char s[100],s1,i;
+    char a[100];
+    int i;
     scanf("%[^
-]s",&s[i]);
-    s1=strlen(s);
-    printf("%d",s1);
-    return 0;
+]s",a);
+    i=strlen(a);
+    printf("%d",i);
 }
