@@ -14,5 +14,4 @@ int main()
         d+=pow(2,i);
     }
     printf("%d",d);
-    
 }
