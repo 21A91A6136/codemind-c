@@ -14,11 +14,10 @@ int main()
 	    c=0;
 	    for(j=1;j<=arr[i];j++)
 	    {
-    	    if(arr[i]%j==0)
-    	    {
-    	       
-    	       c++;
-    	    }
+    	       if(arr[i]%j==0)
+    	       {
+    	           c++;
+    	       }
 	    }
 	    if(c==2)
 	    {
